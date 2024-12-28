@@ -11,7 +11,7 @@ export default function Home() {
     <SearchContext.Provider value={{ search, setSearch }}>
       <Nav />
       <Hero />{" "}
-      <div className="mx-auto w-screen max-w-max h-fit min-h-screen bg-yellow-300 overflow-hidden ">
+      <div className="mx-auto w-screen max-w-max h-fit min-h-screen overflow-hidden ">
         <Container />
       </div>
     </SearchContext.Provider>
