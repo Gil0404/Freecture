@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 const UNSPLASH_API_URL = "https://api.unsplash.com/search/photos";
 const UNSPLASH_API_BASEURL = "https://api.unsplash.com/photos";
-const UNSPLASH_ACCESS_KEY = process.env.VITE_API_KEY;
+const UNSPLASH_ACCESS_KEY = "OVUa7dAIhLBNXdvyidRb6H79fVdyF65feYN5MPzMWdI";
 
 app.get("/api", async (req, res) => {
   const { query = "" } = req.query;
