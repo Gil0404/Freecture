@@ -3,7 +3,6 @@ import cors from "cors";
 import express, { query } from "express";
 const port = 3000;
 const app = express();
-require("dotenv").config();
 app.use(cors());
 const UNSPLASH_API_URL = "https://api.unsplash.com/search/photos";
 const UNSPLASH_API_BASEURL = "https://api.unsplash.com/photos";
