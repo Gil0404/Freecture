@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/(.*)" }],
 
   "env": {
     "VITE_API_KEY": "OVUa7dAIhLBNXdvyidRb6H79fVdyF65feYN5MPzMWdI"
