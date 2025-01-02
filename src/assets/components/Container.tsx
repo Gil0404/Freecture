@@ -14,7 +14,7 @@ export default function Container() {
     async function fetchDataFromServer() {
       try {
         const response = await fetch(
-          `http://localhost:3000/api?query=${search}`
+          `https://freecture-main.vercel.app/api?query=${search}`
         );
         const data = await response.json();
         setProjectData(data.results || data);
