@@ -15,7 +15,7 @@ export default function Hero() {
     console.log(search);
   };
   return (
-    <div className="w-screen  h-[550px] bg-[url('.wallpaper.jpg')] bg-fixed bg-cover -z-0  bg-slate-950 flex flex-col justify-center items-center">
+    <div className="w-screen  h-[550px] bg-[url('wallpaper.jpg')] bg-fixed bg-cover -z-0  bg-slate-950 flex flex-col justify-center items-center">
       <div className="flex flex-row  w-full items-center justify-center gap-1">
         <input
           type="text"
