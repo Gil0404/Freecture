@@ -7,12 +7,7 @@
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ],
+
   "env": {
     "VITE_API_KEY": "OVUa7dAIhLBNXdvyidRb6H79fVdyF65feYN5MPzMWdI"
   }
