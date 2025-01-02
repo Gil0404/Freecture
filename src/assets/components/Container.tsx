@@ -11,19 +11,18 @@ export default function Container() {
   const [projectsData, setProjectData] = useState<CardProps[]>([]);
 
   useEffect(() => {
-    //   async function fetchDataFromServer() {
-    //     try {
-    //       const response = await fetch(
-    //         `http://localhost:3000/api?query=${search}`
-    //       );
-    //       const data = await response.json();
-    //       setProjectData(data.results || data);
-    //     } catch (err) {
-    //       console.log(err);
-    //     }
-    //   }
-    //   fetchDataFromServer();
-    setProjectData([]);
+    async function fetchDataFromServer() {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/api?query=${search}`
+        );
+        const data = await response.json();
+        setProjectData(data.results || data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchDataFromServer();
   }, [search]);
   return (
     <>
